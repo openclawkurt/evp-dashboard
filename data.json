@@ -1,0 +1,1480 @@
+{
+  "generatedAt": "2026-04-06T12:14:48.030Z",
+  "propertyId": "376191126",
+  "siteUrl": "sc-domain:espacovidapilates.com.br",
+  "periods": {
+    "current": {
+      "label": "Atual",
+      "startDate": "2026-04-01",
+      "endDate": "2026-04-05"
+    },
+    "previousMonth": {
+      "label": "Mesmo período mês passado",
+      "startDate": "2026-03-01",
+      "endDate": "2026-03-05"
+    },
+    "previousYear": {
+      "label": "Mesmo período ano passado",
+      "startDate": "2025-04-01",
+      "endDate": "2025-04-05"
+    }
+  },
+  "periodOrder": [
+    "current",
+    "previousMonth",
+    "previousYear"
+  ],
+  "metrics": {
+    "current": {
+      "sessions": 24343,
+      "activeUsers": 21948,
+      "views": 28682,
+      "clicks": 55,
+      "impressions": 5562,
+      "ctr": 0.009888529306005034,
+      "position": 8.03344120819849
+    },
+    "previousMonth": {
+      "sessions": 33947,
+      "activeUsers": 29435,
+      "views": 42318,
+      "clicks": 256,
+      "impressions": 13533,
+      "ctr": 0.018916722086750905,
+      "position": 8.034138771890934
+    },
+    "previousYear": {
+      "sessions": 8716,
+      "activeUsers": 7527,
+      "views": 11157,
+      "clicks": 153,
+      "impressions": 10126,
+      "ctr": 0.015109618803081178,
+      "position": 14.155046415168872
+    }
+  },
+  "charts": {
+    "current": {
+      "gaDaily": [
+        {
+          "date": "2026-04-01",
+          "sessions": 6241,
+          "activeUsers": 5649,
+          "views": 7398
+        },
+        {
+          "date": "2026-04-02",
+          "sessions": 5522,
+          "activeUsers": 4886,
+          "views": 6349
+        },
+        {
+          "date": "2026-04-03",
+          "sessions": 4653,
+          "activeUsers": 4194,
+          "views": 5362
+        },
+        {
+          "date": "2026-04-04",
+          "sessions": 4012,
+          "activeUsers": 3686,
+          "views": 4826
+        },
+        {
+          "date": "2026-04-05",
+          "sessions": 3915,
+          "activeUsers": 3533,
+          "views": 4747
+        }
+      ],
+      "gscDaily": [
+        {
+          "date": "2026-04-01",
+          "clicks": 25,
+          "impressions": 1801,
+          "ctr": 0.0138811771238201,
+          "position": 7.917823431426985
+        },
+        {
+          "date": "2026-04-02",
+          "clicks": 10,
+          "impressions": 1632,
+          "ctr": 0.006127450980392157,
+          "position": 7.946691176470588
+        },
+        {
+          "date": "2026-04-03",
+          "clicks": 12,
+          "impressions": 1036,
+          "ctr": 0.011583011583011582,
+          "position": 8.20945945945946
+        },
+        {
+          "date": "2026-04-04",
+          "clicks": 8,
+          "impressions": 1093,
+          "ctr": 0.007319304666056725,
+          "position": 8.186642268984446
+        }
+      ],
+      "channels": [
+        {
+          "name": "google / cpc",
+          "sessions": 10120,
+          "activeUsers": 9561,
+          "views": 11901
+        },
+        {
+          "name": "meta / cpc",
+          "sessions": 5271,
+          "activeUsers": 4589,
+          "views": 6639
+        },
+        {
+          "name": "google / organic",
+          "sessions": 2510,
+          "activeUsers": 2060,
+          "views": 2701
+        },
+        {
+          "name": "(direct) / (none)",
+          "sessions": 1589,
+          "activeUsers": 1359,
+          "views": 1647
+        },
+        {
+          "name": "instagram.com / referral",
+          "sessions": 1497,
+          "activeUsers": 1252,
+          "views": 1601
+        },
+        {
+          "name": "instagram / social",
+          "sessions": 518,
+          "activeUsers": 454,
+          "views": 707
+        },
+        {
+          "name": "l.instagram.com / referral",
+          "sessions": 437,
+          "activeUsers": 369,
+          "views": 462
+        },
+        {
+          "name": "ig / paid",
+          "sessions": 432,
+          "activeUsers": 382,
+          "views": 462
+        },
+        {
+          "name": "(not set)",
+          "sessions": 306,
+          "activeUsers": 289,
+          "views": 356
+        },
+        {
+          "name": "RD / email",
+          "sessions": 269,
+          "activeUsers": 227,
+          "views": 379
+        },
+        {
+          "name": "blogpilates / organic",
+          "sessions": 193,
+          "activeUsers": 179,
+          "views": 233
+        },
+        {
+          "name": "vollpilates.com.br / referral",
+          "sessions": 185,
+          "activeUsers": 142,
+          "views": 213
+        }
+      ]
+    },
+    "previousMonth": {
+      "gaDaily": [
+        {
+          "date": "2026-03-01",
+          "sessions": 6261,
+          "activeUsers": 5529,
+          "views": 7855
+        },
+        {
+          "date": "2026-03-02",
+          "sessions": 7554,
+          "activeUsers": 6563,
+          "views": 9455
+        },
+        {
+          "date": "2026-03-03",
+          "sessions": 6956,
+          "activeUsers": 6018,
+          "views": 8704
+        },
+        {
+          "date": "2026-03-04",
+          "sessions": 7062,
+          "activeUsers": 6014,
+          "views": 8724
+        },
+        {
+          "date": "2026-03-05",
+          "sessions": 6114,
+          "activeUsers": 5311,
+          "views": 7580
+        }
+      ],
+      "gscDaily": [
+        {
+          "date": "2026-03-01",
+          "clicks": 17,
+          "impressions": 1568,
+          "ctr": 0.010841836734693877,
+          "position": 8.801658163265305
+        },
+        {
+          "date": "2026-03-02",
+          "clicks": 74,
+          "impressions": 3318,
+          "ctr": 0.02230259192284509,
+          "position": 8.254370102471368
+        },
+        {
+          "date": "2026-03-03",
+          "clicks": 44,
+          "impressions": 2865,
+          "ctr": 0.015357766143106457,
+          "position": 8.034205933682372
+        },
+        {
+          "date": "2026-03-04",
+          "clicks": 72,
+          "impressions": 3135,
+          "ctr": 0.022966507177033493,
+          "position": 7.985007974481658
+        },
+        {
+          "date": "2026-03-05",
+          "clicks": 49,
+          "impressions": 2647,
+          "ctr": 0.018511522478277295,
+          "position": 7.3615413675859465
+        }
+      ],
+      "channels": [
+        {
+          "name": "google / organic",
+          "sessions": 8899,
+          "activeUsers": 7324,
+          "views": 9938
+        },
+        {
+          "name": "meta / cpc",
+          "sessions": 8468,
+          "activeUsers": 7538,
+          "views": 11659
+        },
+        {
+          "name": "google / cpc",
+          "sessions": 8035,
+          "activeUsers": 7105,
+          "views": 9910
+        },
+        {
+          "name": "(direct) / (none)",
+          "sessions": 3845,
+          "activeUsers": 2966,
+          "views": 4443
+        },
+        {
+          "name": "instagram / social",
+          "sessions": 1215,
+          "activeUsers": 1059,
+          "views": 1886
+        },
+        {
+          "name": "bing / organic",
+          "sessions": 414,
+          "activeUsers": 303,
+          "views": 446
+        },
+        {
+          "name": "vollpilates.com.br / referral",
+          "sessions": 395,
+          "activeUsers": 283,
+          "views": 515
+        },
+        {
+          "name": "RD Station / email",
+          "sessions": 376,
+          "activeUsers": 302,
+          "views": 509
+        },
+        {
+          "name": "instagram.com / referral",
+          "sessions": 309,
+          "activeUsers": 278,
+          "views": 358
+        },
+        {
+          "name": "blogpilates / organic",
+          "sessions": 267,
+          "activeUsers": 253,
+          "views": 293
+        },
+        {
+          "name": "an / paid",
+          "sessions": 221,
+          "activeUsers": 113,
+          "views": 322
+        },
+        {
+          "name": "(not set)",
+          "sessions": 184,
+          "activeUsers": 171,
+          "views": 172
+        }
+      ]
+    },
+    "previousYear": {
+      "gaDaily": [
+        {
+          "date": "2025-04-01",
+          "sessions": 2091,
+          "activeUsers": 1827,
+          "views": 2595
+        },
+        {
+          "date": "2025-04-02",
+          "sessions": 2340,
+          "activeUsers": 2001,
+          "views": 2955
+        },
+        {
+          "date": "2025-04-03",
+          "sessions": 1588,
+          "activeUsers": 1354,
+          "views": 2060
+        },
+        {
+          "date": "2025-04-04",
+          "sessions": 1393,
+          "activeUsers": 1173,
+          "views": 1867
+        },
+        {
+          "date": "2025-04-05",
+          "sessions": 1304,
+          "activeUsers": 1172,
+          "views": 1680
+        }
+      ],
+      "gscDaily": [
+        {
+          "date": "2025-04-01",
+          "clicks": 39,
+          "impressions": 2343,
+          "ctr": 0.016645326504481434,
+          "position": 13.586854460093896
+        },
+        {
+          "date": "2025-04-02",
+          "clicks": 33,
+          "impressions": 2448,
+          "ctr": 0.013480392156862746,
+          "position": 14.895833333333334
+        },
+        {
+          "date": "2025-04-03",
+          "clicks": 33,
+          "impressions": 2167,
+          "ctr": 0.015228426395939087,
+          "position": 12.739732348869405
+        },
+        {
+          "date": "2025-04-04",
+          "clicks": 29,
+          "impressions": 1994,
+          "ctr": 0.014543630892678034,
+          "position": 14.905717151454363
+        },
+        {
+          "date": "2025-04-05",
+          "clicks": 19,
+          "impressions": 1174,
+          "ctr": 0.016183986371379896,
+          "position": 15.081771720613288
+        }
+      ],
+      "channels": [
+        {
+          "name": "google / cpc",
+          "sessions": 4322,
+          "activeUsers": 3804,
+          "views": 5347
+        },
+        {
+          "name": "meta / cpc",
+          "sessions": 2305,
+          "activeUsers": 2092,
+          "views": 2838
+        },
+        {
+          "name": "instagram / social",
+          "sessions": 476,
+          "activeUsers": 429,
+          "views": 861
+        },
+        {
+          "name": "(direct) / (none)",
+          "sessions": 461,
+          "activeUsers": 120,
+          "views": 544
+        },
+        {
+          "name": "blogpilates / organic",
+          "sessions": 302,
+          "activeUsers": 286,
+          "views": 335
+        },
+        {
+          "name": "google / organic",
+          "sessions": 193,
+          "activeUsers": 117,
+          "views": 270
+        },
+        {
+          "name": "(data not available)",
+          "sessions": 166,
+          "activeUsers": 165,
+          "views": 314
+        },
+        {
+          "name": "blogfisioterapia / organic",
+          "sessions": 116,
+          "activeUsers": 110,
+          "views": 125
+        },
+        {
+          "name": "vollpilates.com.br / referral",
+          "sessions": 115,
+          "activeUsers": 79,
+          "views": 196
+        },
+        {
+          "name": "(not set)",
+          "sessions": 77,
+          "activeUsers": 70,
+          "views": 99
+        },
+        {
+          "name": "blogeducacaofisica / organic",
+          "sessions": 44,
+          "activeUsers": 43,
+          "views": 47
+        },
+        {
+          "name": "grupovoll.com.br / referral",
+          "sessions": 29,
+          "activeUsers": 22,
+          "views": 62
+        }
+      ]
+    }
+  },
+  "tables": {
+    "current": {
+      "gaPages": [
+        {
+          "path": "/",
+          "views": 16345,
+          "sessions": 14334,
+          "activeUsers": 13313
+        },
+        {
+          "path": "/curso-gratuito-de-introducao-ao-metodo-pilates-2026-pagina-de-captacao",
+          "views": 2172,
+          "sessions": 1906,
+          "activeUsers": 1695
+        },
+        {
+          "path": "/lancamento2026/",
+          "views": 2077,
+          "sessions": 1918,
+          "activeUsers": 1598
+        },
+        {
+          "path": "/pos-internacional/",
+          "views": 949,
+          "sessions": 879,
+          "activeUsers": 676
+        },
+        {
+          "path": "/curso-gratuito-de-introducao-ao-metodo-pilates-2026-pagina-de-obrigado",
+          "views": 845,
+          "sessions": 801,
+          "activeUsers": 754
+        },
+        {
+          "path": "/inscricao/",
+          "views": 539,
+          "sessions": 507,
+          "activeUsers": 487
+        },
+        {
+          "path": "/licenciamento-voll-lista-de-espera",
+          "views": 448,
+          "sessions": 428,
+          "activeUsers": 362
+        },
+        {
+          "path": "/pos-patologias/",
+          "views": 438,
+          "sessions": 417,
+          "activeUsers": 334
+        },
+        {
+          "path": "/curso-gratuito-de-introducao-ao-metodo-pilates-2026-pagina-grupos-wpp-ads",
+          "views": 319,
+          "sessions": 306,
+          "activeUsers": 262
+        },
+        {
+          "path": "/curso-de-pilates-formacao-completa-em-pilates-presencial-copia/",
+          "views": 242,
+          "sessions": 208,
+          "activeUsers": 187
+        },
+        {
+          "path": "/clara/",
+          "views": 238,
+          "sessions": 220,
+          "activeUsers": 196
+        },
+        {
+          "path": "/cursos/",
+          "views": 187,
+          "sessions": 172,
+          "activeUsers": 138
+        }
+      ],
+      "gscPages": [
+        {
+          "page": "https://espacovidapilates.com.br/",
+          "clicks": 13,
+          "impressions": 1883,
+          "ctr": 0.006903876792352629,
+          "position": 8.609665427509293
+        },
+        {
+          "page": "https://www.espacovidapilates.com.br/",
+          "clicks": 10,
+          "impressions": 1790,
+          "ctr": 0.00558659217877095,
+          "position": 8.008379888268156
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/sao-paulo/sorocaba/",
+          "clicks": 6,
+          "impressions": 81,
+          "ctr": 0.07407407407407407,
+          "position": 7.987654320987654
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/bahia/salvador/",
+          "clicks": 2,
+          "impressions": 50,
+          "ctr": 0.04,
+          "position": 4.54
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/sao-paulo/santos/",
+          "clicks": 2,
+          "impressions": 37,
+          "ctr": 0.05405405405405406,
+          "position": 10.81081081081081
+        },
+        {
+          "page": "https://www.espacovidapilates.com.br/curso-de-formacao-em-pilates/espirito-santo/vitoria/",
+          "clicks": 2,
+          "impressions": 45,
+          "ctr": 0.044444444444444446,
+          "position": 7.911111111111111
+        },
+        {
+          "page": "http://www.espacovidapilates.com.br/",
+          "clicks": 1,
+          "impressions": 79,
+          "ctr": 0.012658227848101266,
+          "position": 4.518987341772152
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/amazonas/manaus/",
+          "clicks": 1,
+          "impressions": 43,
+          "ctr": 0.023255813953488372,
+          "position": 8.651162790697676
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/bahia/curso-de-pilates-em-juazeiro-ba/",
+          "clicks": 1,
+          "impressions": 19,
+          "ctr": 0.05263157894736842,
+          "position": 6.526315789473684
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/bahia/valenca/",
+          "clicks": 1,
+          "impressions": 12,
+          "ctr": 0.08333333333333333,
+          "position": 5.75
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/distrito-federal/curso-de-pilates-em-gama-df/",
+          "clicks": 1,
+          "impressions": 43,
+          "ctr": 0.023255813953488372,
+          "position": 7.744186046511628
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/mato-grosso/curso-de-pilates-em-tangara-da-serra-mt/",
+          "clicks": 1,
+          "impressions": 6,
+          "ctr": 0.16666666666666666,
+          "position": 5
+        }
+      ],
+      "gscQueries": [
+        {
+          "query": "curso de pilates",
+          "clicks": 6,
+          "impressions": 203,
+          "ctr": 0.029556650246305417,
+          "position": 2.167487684729064
+        },
+        {
+          "query": "curso de pilates presencial",
+          "clicks": 3,
+          "impressions": 33,
+          "ctr": 0.09090909090909091,
+          "position": 1.7575757575757576
+        },
+        {
+          "query": "curso pilates",
+          "clicks": 3,
+          "impressions": 64,
+          "ctr": 0.046875,
+          "position": 3.6875
+        },
+        {
+          "query": "pilates",
+          "clicks": 3,
+          "impressions": 1273,
+          "ctr": 0.002356637863315004,
+          "position": 11.531029065200315
+        },
+        {
+          "query": "curso de formação em pilates",
+          "clicks": 2,
+          "impressions": 6,
+          "ctr": 0.3333333333333333,
+          "position": 3.5
+        },
+        {
+          "query": "espaço vida pilates",
+          "clicks": 2,
+          "impressions": 9,
+          "ctr": 0.2222222222222222,
+          "position": 2.4444444444444446
+        },
+        {
+          "query": "curso de pilates em brasília",
+          "clicks": 1,
+          "impressions": 6,
+          "ctr": 0.16666666666666666,
+          "position": 3.1666666666666665
+        },
+        {
+          "query": "curso de pilates em salvador",
+          "clicks": 1,
+          "impressions": 5,
+          "ctr": 0.2,
+          "position": 4
+        },
+        {
+          "query": "curso de pilates reconhecido pelo mec",
+          "clicks": 1,
+          "impressions": 26,
+          "ctr": 0.038461538461538464,
+          "position": 6
+        },
+        {
+          "query": "curso de pilates sorocaba",
+          "clicks": 1,
+          "impressions": 2,
+          "ctr": 0.5,
+          "position": 1.5
+        },
+        {
+          "query": "curso pilates presencial",
+          "clicks": 1,
+          "impressions": 8,
+          "ctr": 0.125,
+          "position": 1.5
+        },
+        {
+          "query": "cursos pilates",
+          "clicks": 1,
+          "impressions": 4,
+          "ctr": 0.25,
+          "position": 2.75
+        }
+      ]
+    },
+    "previousMonth": {
+      "gaPages": [
+        {
+          "path": "/",
+          "views": 14881,
+          "sessions": 13739,
+          "activeUsers": 11566
+        },
+        {
+          "path": "/evento-online-pilates-para-reabilitacao-e-grupos-especiais-2026-pagina-de-captacao",
+          "views": 5652,
+          "sessions": 5008,
+          "activeUsers": 4518
+        },
+        {
+          "path": "/evento-online-pilates-para-reabilitacao-e-grupos-especiais-2026-pagina-de-obrigado",
+          "views": 2518,
+          "sessions": 2393,
+          "activeUsers": 2183
+        },
+        {
+          "path": "/lancamento2026/",
+          "views": 1760,
+          "sessions": 1590,
+          "activeUsers": 1319
+        },
+        {
+          "path": "/curso-de-pilates-formacao-completa-em-pilates-presencial-copia/",
+          "views": 1654,
+          "sessions": 1515,
+          "activeUsers": 1385
+        },
+        {
+          "path": "/inscricao-curso-de-pilates-voll/",
+          "views": 1362,
+          "sessions": 1137,
+          "activeUsers": 1081
+        },
+        {
+          "path": "/pos-patologias/",
+          "views": 958,
+          "sessions": 897,
+          "activeUsers": 769
+        },
+        {
+          "path": "/pos-internacional/",
+          "views": 711,
+          "sessions": 668,
+          "activeUsers": 533
+        },
+        {
+          "path": "/34-exercicios-originais-de-pilates/",
+          "views": 540,
+          "sessions": 536,
+          "activeUsers": 359
+        },
+        {
+          "path": "/introducao-pilates",
+          "views": 441,
+          "sessions": 382,
+          "activeUsers": 336
+        },
+        {
+          "path": "/cursos/",
+          "views": 369,
+          "sessions": 335,
+          "activeUsers": 275
+        },
+        {
+          "path": "/introducao-ao-pilates-2024-aulas",
+          "views": 359,
+          "sessions": 325,
+          "activeUsers": 240
+        }
+      ],
+      "gscPages": [
+        {
+          "page": "https://espacovidapilates.com.br/",
+          "clicks": 36,
+          "impressions": 3473,
+          "ctr": 0.010365678088108263,
+          "position": 8.453210480852288
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/parana/curitiba/",
+          "clicks": 12,
+          "impressions": 257,
+          "ctr": 0.04669260700389105,
+          "position": 8.439688715953308
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/minas-gerais/belo-horizonte/",
+          "clicks": 8,
+          "impressions": 140,
+          "ctr": 0.05714285714285714,
+          "position": 7.707142857142857
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/bahia/salvador/",
+          "clicks": 6,
+          "impressions": 97,
+          "ctr": 0.061855670103092786,
+          "position": 4.824742268041238
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/ceara/fortaleza/",
+          "clicks": 6,
+          "impressions": 156,
+          "ctr": 0.038461538461538464,
+          "position": 8.326923076923077
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/rio-de-janeiro/curso-de-pilates-em-duque-de-caxias-rj/",
+          "clicks": 6,
+          "impressions": 90,
+          "ctr": 0.06666666666666667,
+          "position": 7.511111111111111
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/sao-paulo/campinas/",
+          "clicks": 6,
+          "impressions": 81,
+          "ctr": 0.07407407407407407,
+          "position": 7.6419753086419755
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/pernambuco/recife/",
+          "clicks": 5,
+          "impressions": 148,
+          "ctr": 0.033783783783783786,
+          "position": 8.14864864864865
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/alagoas/maceio/",
+          "clicks": 4,
+          "impressions": 130,
+          "ctr": 0.03076923076923077,
+          "position": 12.46923076923077
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/distrito-federal/brasilia/",
+          "clicks": 4,
+          "impressions": 366,
+          "ctr": 0.01092896174863388,
+          "position": 4.270491803278689
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/espirito-santo/vitoria/",
+          "clicks": 4,
+          "impressions": 172,
+          "ctr": 0.023255813953488372,
+          "position": 11.726744186046512
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/rio-de-janeiro/curso-de-pilates-em-niteroi-rj/",
+          "clicks": 4,
+          "impressions": 44,
+          "ctr": 0.09090909090909091,
+          "position": 5.886363636363637
+        }
+      ],
+      "gscQueries": [
+        {
+          "query": "curso de pilates",
+          "clicks": 33,
+          "impressions": 465,
+          "ctr": 0.07096774193548387,
+          "position": 3.1870967741935483
+        },
+        {
+          "query": "curso pilates",
+          "clicks": 11,
+          "impressions": 115,
+          "ctr": 0.09565217391304348,
+          "position": 2.5391304347826087
+        },
+        {
+          "query": "espaco vida pilates",
+          "clicks": 8,
+          "impressions": 14,
+          "ctr": 0.5714285714285714,
+          "position": 1.7857142857142856
+        },
+        {
+          "query": "curso de pilates presencial",
+          "clicks": 5,
+          "impressions": 60,
+          "ctr": 0.08333333333333333,
+          "position": 2.8
+        },
+        {
+          "query": "voll pilates",
+          "clicks": 5,
+          "impressions": 909,
+          "ctr": 0.005500550055005501,
+          "position": 7.902090209020902
+        },
+        {
+          "query": "espaço vida pilates",
+          "clicks": 4,
+          "impressions": 31,
+          "ctr": 0.12903225806451613,
+          "position": 2.806451612903226
+        },
+        {
+          "query": "curso pilates curitiba",
+          "clicks": 3,
+          "impressions": 10,
+          "ctr": 0.3,
+          "position": 2.2
+        },
+        {
+          "query": "curso de pilates em fortaleza",
+          "clicks": 2,
+          "impressions": 12,
+          "ctr": 0.16666666666666666,
+          "position": 2.75
+        },
+        {
+          "query": "curso de pilates em recife",
+          "clicks": 2,
+          "impressions": 8,
+          "ctr": 0.25,
+          "position": 1.875
+        },
+        {
+          "query": "curso de pilates para fisioterapeutas",
+          "clicks": 2,
+          "impressions": 11,
+          "ctr": 0.18181818181818182,
+          "position": 5.363636363636363
+        },
+        {
+          "query": "cursos pilates",
+          "clicks": 2,
+          "impressions": 12,
+          "ctr": 0.16666666666666666,
+          "position": 4.25
+        },
+        {
+          "query": "voll pilates certificado",
+          "clicks": 2,
+          "impressions": 13,
+          "ctr": 0.15384615384615385,
+          "position": 5.769230769230769
+        }
+      ]
+    },
+    "previousYear": {
+      "gaPages": [
+        {
+          "path": "/",
+          "views": 5465,
+          "sessions": 4757,
+          "activeUsers": 3855
+        },
+        {
+          "path": "/curso-de-pilates-formacao-completa-em-pilates-presencial-copia/",
+          "views": 4139,
+          "sessions": 3698,
+          "activeUsers": 3430
+        },
+        {
+          "path": "/inscricao-curso-de-pilates-voll/",
+          "views": 723,
+          "sessions": 587,
+          "activeUsers": 567
+        },
+        {
+          "path": "/pagamento/",
+          "views": 400,
+          "sessions": 394,
+          "activeUsers": 360
+        },
+        {
+          "path": "/conteudo-do-curso/",
+          "views": 283,
+          "sessions": 256,
+          "activeUsers": 223
+        },
+        {
+          "path": "/curso-de-formacao-em-pilates/rio-de-janeiro/curso-de-pilates-em-niteroi-rj/",
+          "views": 13,
+          "sessions": 5,
+          "activeUsers": 5
+        },
+        {
+          "path": "/curso-de-formacao-em-pilates/rio-de-janeiro/rio-de-janeiro/",
+          "views": 10,
+          "sessions": 8,
+          "activeUsers": 7
+        },
+        {
+          "path": "/curso-de-formacao-em-pilates/minas-gerais/belo-horizonte/",
+          "views": 6,
+          "sessions": 6,
+          "activeUsers": 6
+        },
+        {
+          "path": "/curso-de-formacao-em-pilates/distrito-federal/brasilia/",
+          "views": 5,
+          "sessions": 3,
+          "activeUsers": 2
+        },
+        {
+          "path": "/curso-de-formacao-em-pilates/minas-gerais/pouso-alegre/",
+          "views": 5,
+          "sessions": 4,
+          "activeUsers": 2
+        },
+        {
+          "path": "/curso-de-formacao-em-pilates/santa-catarina/florianopolis/",
+          "views": 5,
+          "sessions": 5,
+          "activeUsers": 4
+        },
+        {
+          "path": "/curso-de-formacao-em-pilates/bahia/salvador/",
+          "views": 4,
+          "sessions": 4,
+          "activeUsers": 4
+        }
+      ],
+      "gscPages": [
+        {
+          "page": "https://espacovidapilates.com.br/",
+          "clicks": 42,
+          "impressions": 5005,
+          "ctr": 0.008391608391608392,
+          "position": 17.59000999000999
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/rio-de-janeiro/curso-de-pilates-em-niteroi-rj/",
+          "clicks": 11,
+          "impressions": 46,
+          "ctr": 0.2391304347826087,
+          "position": 11.673913043478262
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/minas-gerais/belo-horizonte/",
+          "clicks": 6,
+          "impressions": 148,
+          "ctr": 0.04054054054054054,
+          "position": 9.114864864864865
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/rio-de-janeiro/rio-de-janeiro/",
+          "clicks": 6,
+          "impressions": 207,
+          "ctr": 0.028985507246376812,
+          "position": 11.193236714975846
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/bahia/salvador/",
+          "clicks": 4,
+          "impressions": 63,
+          "ctr": 0.06349206349206349,
+          "position": 10.587301587301587
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/minas-gerais/pouso-alegre/",
+          "clicks": 4,
+          "impressions": 49,
+          "ctr": 0.08163265306122448,
+          "position": 10.306122448979592
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/distrito-federal/brasilia/",
+          "clicks": 3,
+          "impressions": 86,
+          "ctr": 0.03488372093023256,
+          "position": 8.569767441860465
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/espirito-santo/vitoria/",
+          "clicks": 3,
+          "impressions": 92,
+          "ctr": 0.03260869565217391,
+          "position": 12.326086956521738
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/maranhao/curso-de-pilates-em-imperatriz-ma/",
+          "clicks": 3,
+          "impressions": 30,
+          "ctr": 0.1,
+          "position": 8.866666666666667
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/minas-gerais/pocos-de-caldas/",
+          "clicks": 3,
+          "impressions": 35,
+          "ctr": 0.08571428571428572,
+          "position": 9.2
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/para/belem/",
+          "clicks": 3,
+          "impressions": 59,
+          "ctr": 0.05084745762711865,
+          "position": 11.033898305084746
+        },
+        {
+          "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/parana/curitiba/",
+          "clicks": 3,
+          "impressions": 90,
+          "ctr": 0.03333333333333333,
+          "position": 7.955555555555556
+        }
+      ],
+      "gscQueries": [
+        {
+          "query": "curso de pilates",
+          "clicks": 8,
+          "impressions": 519,
+          "ctr": 0.015414258188824663,
+          "position": 7.269749518304431
+        },
+        {
+          "query": "espaco vida pilates",
+          "clicks": 6,
+          "impressions": 20,
+          "ctr": 0.3,
+          "position": 1.2
+        },
+        {
+          "query": "espaço vida pilates",
+          "clicks": 5,
+          "impressions": 23,
+          "ctr": 0.21739130434782608,
+          "position": 2
+        },
+        {
+          "query": "curso pilates",
+          "clicks": 4,
+          "impressions": 155,
+          "ctr": 0.025806451612903226,
+          "position": 14.845161290322581
+        },
+        {
+          "query": "curso de pilates presencial",
+          "clicks": 3,
+          "impressions": 30,
+          "ctr": 0.1,
+          "position": 4.366666666666667
+        },
+        {
+          "query": "curso de pilates bh",
+          "clicks": 2,
+          "impressions": 8,
+          "ctr": 0.25,
+          "position": 4.125
+        },
+        {
+          "query": "curso de pilates df",
+          "clicks": 2,
+          "impressions": 12,
+          "ctr": 0.16666666666666666,
+          "position": 3.5
+        },
+        {
+          "query": "curso de pilates reconhecido pelo mec",
+          "clicks": 2,
+          "impressions": 17,
+          "ctr": 0.11764705882352941,
+          "position": 10.058823529411764
+        },
+        {
+          "query": "curso de pilates rj",
+          "clicks": 2,
+          "impressions": 16,
+          "ctr": 0.125,
+          "position": 5.1875
+        },
+        {
+          "query": "voll pilates",
+          "clicks": 2,
+          "impressions": 1144,
+          "ctr": 0.0017482517482517483,
+          "position": 7.201923076923077
+        },
+        {
+          "query": "curso de instrutora de pilates",
+          "clicks": 1,
+          "impressions": 3,
+          "ctr": 0.3333333333333333,
+          "position": 6
+        },
+        {
+          "query": "curso de pilates em belém",
+          "clicks": 1,
+          "impressions": 11,
+          "ctr": 0.09090909090909091,
+          "position": 3.6363636363636362
+        }
+      ]
+    }
+  },
+  "comparisons": {
+    "sessions": {
+      "vsPreviousMonth": -28.291159749020533,
+      "vsPreviousYear": 179.29095915557596
+    },
+    "activeUsers": {
+      "vsPreviousMonth": -25.435705792423985,
+      "vsPreviousYear": 191.59027500996413
+    },
+    "views": {
+      "vsPreviousMonth": -32.22269483434945,
+      "vsPreviousYear": 157.07627498431478
+    },
+    "clicks": {
+      "vsPreviousMonth": -78.515625,
+      "vsPreviousYear": -64.05228758169935
+    },
+    "impressions": {
+      "vsPreviousMonth": -58.9004655287076,
+      "vsPreviousYear": -45.0720916452696
+    },
+    "ctr": {
+      "vsPreviousMonth": -47.72598941477886,
+      "vsPreviousYear": -34.554740030975836
+    },
+    "position": {
+      "vsPreviousMonth": -0.008682494941275043,
+      "vsPreviousYear": -43.24680419564241
+    }
+  },
+  "aligned": {
+    "labels": [
+      "04-01",
+      "04-02",
+      "04-03",
+      "04-04",
+      "04-05"
+    ],
+    "sessions": {
+      "current": [
+        6241,
+        5522,
+        4653,
+        4012,
+        3915
+      ],
+      "previousMonth": [
+        6261,
+        7554,
+        6956,
+        7062,
+        6114
+      ],
+      "previousYear": [
+        2091,
+        2340,
+        1588,
+        1393,
+        1304
+      ]
+    },
+    "clicks": {
+      "current": [
+        25,
+        10,
+        12,
+        8
+      ],
+      "previousMonth": [
+        17,
+        74,
+        44,
+        72,
+        49
+      ],
+      "previousYear": [
+        39,
+        33,
+        33,
+        29,
+        19
+      ]
+    },
+    "impressions": {
+      "current": [
+        1801,
+        1632,
+        1036,
+        1093
+      ],
+      "previousMonth": [
+        1568,
+        3318,
+        2865,
+        3135,
+        2647
+      ],
+      "previousYear": [
+        2343,
+        2448,
+        2167,
+        1994,
+        1174
+      ]
+    }
+  },
+  "highlights": {
+    "topChannelsCurrent": [
+      {
+        "name": "google / cpc",
+        "sessions": 10120
+      },
+      {
+        "name": "meta / cpc",
+        "sessions": 5271
+      },
+      {
+        "name": "google / organic",
+        "sessions": 2510
+      },
+      {
+        "name": "(direct) / (none)",
+        "sessions": 1589
+      },
+      {
+        "name": "instagram.com / referral",
+        "sessions": 1497
+      },
+      {
+        "name": "instagram / social",
+        "sessions": 518
+      }
+    ],
+    "topGaPagesCurrent": [
+      {
+        "path": "/",
+        "views": 16345,
+        "sessions": 14334
+      },
+      {
+        "path": "/curso-gratuito-de-introducao-ao-metodo-pilates-2026-pagina-de-captacao",
+        "views": 2172,
+        "sessions": 1906
+      },
+      {
+        "path": "/lancamento2026/",
+        "views": 2077,
+        "sessions": 1918
+      },
+      {
+        "path": "/pos-internacional/",
+        "views": 949,
+        "sessions": 879
+      },
+      {
+        "path": "/curso-gratuito-de-introducao-ao-metodo-pilates-2026-pagina-de-obrigado",
+        "views": 845,
+        "sessions": 801
+      },
+      {
+        "path": "/inscricao/",
+        "views": 539,
+        "sessions": 507
+      }
+    ],
+    "topGscPagesCurrent": [
+      {
+        "page": "https://espacovidapilates.com.br/",
+        "clicks": 13,
+        "impressions": 1883
+      },
+      {
+        "page": "https://www.espacovidapilates.com.br/",
+        "clicks": 10,
+        "impressions": 1790
+      },
+      {
+        "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/sao-paulo/sorocaba/",
+        "clicks": 6,
+        "impressions": 81
+      },
+      {
+        "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/bahia/salvador/",
+        "clicks": 2,
+        "impressions": 50
+      },
+      {
+        "page": "https://espacovidapilates.com.br/curso-de-formacao-em-pilates/sao-paulo/santos/",
+        "clicks": 2,
+        "impressions": 37
+      },
+      {
+        "page": "https://www.espacovidapilates.com.br/curso-de-formacao-em-pilates/espirito-santo/vitoria/",
+        "clicks": 2,
+        "impressions": 45
+      }
+    ],
+    "topQueriesCurrent": [
+      {
+        "query": "curso de pilates",
+        "clicks": 6,
+        "impressions": 203,
+        "position": 2.167487684729064
+      },
+      {
+        "query": "curso de pilates presencial",
+        "clicks": 3,
+        "impressions": 33,
+        "position": 1.7575757575757576
+      },
+      {
+        "query": "curso pilates",
+        "clicks": 3,
+        "impressions": 64,
+        "position": 3.6875
+      },
+      {
+        "query": "pilates",
+        "clicks": 3,
+        "impressions": 1273,
+        "position": 11.531029065200315
+      },
+      {
+        "query": "curso de formação em pilates",
+        "clicks": 2,
+        "impressions": 6,
+        "position": 3.5
+      },
+      {
+        "query": "espaço vida pilates",
+        "clicks": 2,
+        "impressions": 9,
+        "position": 2.4444444444444446
+      },
+      {
+        "query": "curso de pilates em brasília",
+        "clicks": 1,
+        "impressions": 6,
+        "position": 3.1666666666666665
+      },
+      {
+        "query": "curso de pilates em salvador",
+        "clicks": 1,
+        "impressions": 5,
+        "position": 4
+      }
+    ]
+  }
+}
