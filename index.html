@@ -3,238 +3,244 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EVP Dashboard | Kurt Stack Test</title>
+  <title>EVP Executive Intelligence | Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2"></script>
   <style>
     :root {
-      --bg: #07111f;
-      --panel: rgba(13, 25, 43, 0.82);
-      --panel-2: #0d1b2e;
-      --line: rgba(148, 163, 184, 0.18);
-      --text: #e5eef9;
-      --muted: #94a3b8;
-      --green: #2dd4bf;
-      --red: #fb7185;
-      --amber: #fbbf24;
-      --blue: #60a5fa;
-      --purple: #a78bfa;
-      --pink: #f472b6;
+      --bg: #050505;
+      --card-bg: #111111;
+      --card-border: #222222;
+      --text-main: #f5f7fb;
+      --text-muted: #888888;
+      --accent-blue: #3b82f6;
+      --accent-purple: #8b5cf6;
+      --accent-pink: #ec4899;
+      --accent-green: #10b981;
+      --accent-red: #ef4444;
+      --gradient: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
     }
-    * { box-sizing: border-box; }
+
+    * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+    
     body {
       margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: radial-gradient(circle at top, #10213d 0%, var(--bg) 48%, #040813 100%);
-      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
     }
-    .wrap { max-width: 1380px; margin: 0 auto; padding: 32px 20px 64px; }
-    .hero {
-      display: flex; justify-content: space-between; gap: 18px; align-items: end; margin-bottom: 24px;
-      padding: 28px; border: 1px solid var(--line); border-radius: 24px;
-      background: linear-gradient(135deg, rgba(96,165,250,.16), rgba(167,139,250,.12) 42%, rgba(13,27,46,.9));
-      box-shadow: 0 18px 70px rgba(0,0,0,.35);
+
+    .container { max-width: 1400px; margin: 0 auto; padding: 40px 24px; }
+
+    header {
+      display: flex; justify-content: space-between; align-items: flex-start;
+      margin-bottom: 48px; border-bottom: 1px solid var(--card-border);
+      padding-bottom: 32px;
     }
-    h1 { margin: 0 0 8px; font-size: clamp(28px, 4vw, 46px); }
-    .subtitle, .meta { color: var(--muted); }
-    .grid { display: grid; gap: 16px; }
-    .kpis { grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 18px 0 26px; }
-    .charts-2 { grid-template-columns: 1.3fr 1fr; }
-    .charts-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 16px; }
-    .tables { grid-template-columns: 1fr 1fr; margin-top: 16px; }
+
+    .brand h1 {
+      font-size: 38px; font-weight: 800; margin: 0; letter-spacing: -0.03em;
+      background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .brand p { color: var(--text-muted); margin: 4px 0 0; font-weight: 500; }
+
+    .status-badge {
+      background: rgba(16, 185, 129, 0.1); color: var(--accent-green);
+      padding: 6px 12px; border-radius: 8px; font-size: 12px; font-weight: 700;
+      border: 1px solid rgba(16, 185, 129, 0.2); display: flex; align-items: center; gap: 6px;
+    }
+    .status-badge::before { content: ''; width: 8px; height: 8px; background: var(--accent-green); border-radius: 50%; box-shadow: 0 0 10px var(--accent-green); }
+
+    .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 40px; }
+    
     .card {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 22px;
-      padding: 18px;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 10px 40px rgba(0,0,0,.18);
+      background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px;
+      padding: 24px; transition: transform 0.2s ease, border-color 0.2s ease;
     }
-    .card h3, .card h2 { margin: 0 0 6px; }
-    .small { color: var(--muted); font-size: 13px; }
-    .value { font-size: clamp(28px, 3vw, 42px); font-weight: 800; margin: 10px 0 6px; }
-    .compare { display: flex; gap: 8px; flex-wrap: wrap; }
-    .pill {
-      padding: 8px 10px; border-radius: 999px; font-size: 12px; border: 1px solid var(--line); background: rgba(255,255,255,.03);
-    }
-    .good { color: var(--green); }
-    .bad { color: var(--red); }
-    .neutral { color: var(--amber); }
-    .section-title { margin: 30px 0 12px; color: #dbeafe; font-size: 18px; }
-    table { width: 100%; border-collapse: collapse; font-size: 13px; }
-    th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); }
-    th { color: #cbd5e1; font-weight: 600; }
+    .card:hover { border-color: #333; transform: translateY(-2px); }
+
+    .kpi-card .label { color: var(--text-muted); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px; }
+    .kpi-card .value { font-size: 34px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 8px; }
+    
+    .trend { display: flex; gap: 12px; align-items: center; font-size: 13px; font-weight: 600; }
+    .trend span { padding: 4px 8px; border-radius: 6px; }
+    .trend.up span { background: rgba(16, 185, 129, 0.1); color: var(--accent-green); }
+    .trend.down span { background: rgba(239, 68, 68, 0.1); color: var(--accent-red); }
+    .trend .period-label { color: var(--text-muted); font-weight: 400; }
+
+    .chart-main { display: grid; grid-template-columns: 2fr 1fr; gap: 24px; margin-bottom: 40px; }
+    .chart-card h3 { font-size: 18px; margin: 0 0 24px; font-weight: 700; color: #fff; }
+    canvas { width: 100% !important; height: 350px !important; }
+
+    .table-section { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .table-card { overflow: hidden; }
+    .table-card h3 { padding: 24px 24px 0; margin: 0 0 16px; font-size: 17px; }
+    
+    table { width: 100%; border-collapse: collapse; }
+    th { text-align: left; padding: 12px 24px; font-size: 12px; color: var(--text-muted); border-bottom: 1px solid var(--card-border); font-weight: 600; text-transform: uppercase; }
+    td { padding: 14px 24px; font-size: 14px; border-bottom: 1px solid var(--card-border); }
     tr:last-child td { border-bottom: none; }
-    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; }
-    canvas { width: 100% !important; height: 320px !important; }
-    .mini canvas { height: 260px !important; }
-    @media (max-width: 1080px) {
-      .kpis, .charts-2, .charts-3, .tables { grid-template-columns: 1fr 1fr; }
+    .mono { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--accent-blue); }
+
+    .alert-card {
+      background: rgba(239, 68, 68, 0.05); border: 1px solid rgba(239, 68, 68, 0.2);
+      padding: 16px 24px; border-radius: 12px; margin-bottom: 32px; display: none;
+      align-items: center; gap: 16px;
     }
-    @media (max-width: 760px) {
-      .hero, .kpis, .charts-2, .charts-3, .tables { grid-template-columns: 1fr; display: grid; }
+    .alert-card.active { display: flex; }
+    .alert-card b { color: var(--accent-red); }
+
+    @media (max-width: 1024px) {
+      .chart-main, .table-section { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <section class="hero">
-      <div>
-        <div class="small">Dashboard executivo EVP</div>
-        <h1>Atual vs mês passado vs ano passado</h1>
-        <div id="period-summary" class="subtitle"></div>
+  <div class="container">
+    <div id="critical-alert" class="alert-card">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-red)"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+      <span><b>Alerta de Performance:</b> Queda significativa detectada em Cliques Orgânicos vs mês passado.</span>
+    </div>
+
+    <header>
+      <div class="brand">
+        <h1>EVP Executive Intelligence</h1>
+        <p id="period-info">Carregando métricas...</p>
       </div>
-      <div class="meta" id="generated-at"></div>
-    </section>
+      <div id="sync-badge" class="status-badge">Live Intelligence</div>
+    </header>
 
-    <section class="grid kpis" id="kpis"></section>
+    <div class="kpi-grid" id="kpi-container"></div>
 
-    <div class="section-title">Tendência diária alinhada</div>
-    <section class="grid charts-2">
-      <div class="card"><h3>Sessões GA4 por dia</h3><div class="small">Mesmo recorte de dias do mês</div><canvas id="sessionsChart"></canvas></div>
-      <div class="card"><h3>Cliques orgânicos GSC</h3><div class="small">Atual x mês passado x ano passado</div><canvas id="clicksChart"></canvas></div>
-    </section>
+    <div class="chart-main">
+      <div class="card chart-card">
+        <h3>Performance de Tráfego (Sessões GA4)</h3>
+        <canvas id="mainChart"></canvas>
+      </div>
+      <div class="card chart-card">
+        <h3>Composição por Canal</h3>
+        <canvas id="donutChart"></canvas>
+      </div>
+    </div>
 
-    <section class="grid charts-3">
-      <div class="card mini"><h3>Impressões orgânicas</h3><canvas id="impressionsChart"></canvas></div>
-      <div class="card mini"><h3>Canais por sessões</h3><div class="small">Top 6 do período atual</div><canvas id="channelsChart"></canvas></div>
-      <div class="card mini"><h3>Radar de KPIs</h3><div class="small">Escala relativa entre os três períodos</div><canvas id="radarChart"></canvas></div>
-    </section>
-
-    <div class="section-title">Tabelas de apoio</div>
-    <section class="grid tables">
-      <div class="card"><h3>Top páginas locais no GSC</h3><div id="gscPagesTable"></div></div>
-      <div class="card"><h3>Top queries locais no GSC</h3><div id="gscQueriesTable"></div></div>
-      <div class="card"><h3>Top páginas no GA4</h3><div id="gaPagesTable"></div></div>
-      <div class="card"><h3>Resumo por período</h3><div id="summaryTable"></div></div>
-    </section>
+    <div class="table-section">
+      <div class="card table-card">
+        <h3>Top Landing Pages (GA4)</h3>
+        <div id="gaPagesTable"></div>
+      </div>
+      <div class="card table-card">
+        <h3>Performance de Busca (GSC)</h3>
+        <div id="gscQueriesTable"></div>
+      </div>
+    </div>
   </div>
-<script>
-const fmtInt = new Intl.NumberFormat('pt-BR');
-const fmtPct = new Intl.NumberFormat('pt-BR', { style: 'percent', minimumFractionDigits: 2, maximumFractionDigits: 2 });
-const fmtPctSigned = new Intl.NumberFormat('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
-const colors = { current:'#60a5fa', previousMonth:'#a78bfa', previousYear:'#2dd4bf', accent:'#f472b6', amber:'#fbbf24' };
 
-function num(v){ return fmtInt.format(Math.round(v || 0)); }
-function pct(v){ return fmtPct.format(v || 0); }
-function position(v){ return Number(v || 0).toFixed(2); }
-function deltaHtml(label, value, inverse=false){
-  if (value === null || value === undefined || Number.isNaN(value)) return `<span class="pill neutral">${label}: n/d</span>`;
-  const positive = value >= 0;
-  const cls = inverse ? (positive ? 'bad' : 'good') : (positive ? 'good' : 'bad');
-  const sign = positive ? '+' : '';
-  return `<span class="pill ${cls}">${label}: ${sign}${fmtPctSigned.format(value)}%</span>`;
-}
-function metricFormat(key, value){
-  if (key === 'ctr') return pct(value);
-  if (key === 'position') return position(value);
-  return num(value);
-}
-function makeTable(columns, rows){
-  const head = `<thead><tr>${columns.map(c=>`<th>${c.label}</th>`).join('')}</tr></thead>`;
-  const body = `<tbody>${rows.map(r=>`<tr>${columns.map(c=>`<td class="${c.className||''}">${c.render ? c.render(r[c.key], r) : r[c.key]}</td>`).join('')}</tr>`).join('')}</tbody>`;
-  return `<table>${head}${body}</table>`;
-}
-function chartLine(id, labels, series, stacked=false){
-  new Chart(document.getElementById(id), {
-    type:'line',
-    data:{ labels, datasets: series.map(s => ({ label:s.label, data:s.data, borderColor:s.color, backgroundColor:s.color+'22', tension:.34, fill:false, borderWidth:3, pointRadius:3 })) },
-    options:{ responsive:true, maintainAspectRatio:false, plugins:{ legend:{ labels:{ color:'#e5eef9' } } }, scales:{ x:{ ticks:{ color:'#cbd5e1' }, grid:{ color:'rgba(148,163,184,.08)' } }, y:{ ticks:{ color:'#cbd5e1' }, grid:{ color:'rgba(148,163,184,.08)' } } } }
-  });
-}
-function chartBar(id, labels, data, color){
-  new Chart(document.getElementById(id), { type:'bar', data:{ labels, datasets:[{ data, backgroundColor: color }] }, options:{ responsive:true, maintainAspectRatio:false, plugins:{ legend:{ display:false } }, scales:{ x:{ ticks:{ color:'#cbd5e1' }, grid:{ display:false } }, y:{ ticks:{ color:'#cbd5e1' }, grid:{ color:'rgba(148,163,184,.08)' } } } } });
-}
+  <script>
+    const fmt = new Intl.NumberFormat('pt-BR');
+    const colors = { blue: '#3b82f6', purple: '#8b5cf6', pink: '#ec4899', green: '#10b981', gray: '#333333' };
 
-fetch('./data.json').then(r=>r.json()).then(data => {
-  document.getElementById('generated-at').textContent = `Gerado em ${new Date(data.generatedAt).toLocaleString('pt-BR')}`;
-  const p = data.periods;
-  document.getElementById('period-summary').textContent = `Atual: ${p.current.startDate} → ${p.current.endDate} | Mês passado: ${p.previousMonth.startDate} → ${p.previousMonth.endDate} | Ano passado: ${p.previousYear.startDate} → ${p.previousYear.endDate}`;
+    function trendHtml(val, label) {
+      if (val === undefined || val === null) return '';
+      const isUp = val >= 0;
+      return `<div class="trend ${isUp ? 'up' : 'down'}">
+        <span>${isUp ? '▲' : '▼'} ${Math.abs(val).toFixed(1)}%</span>
+        <span class="period-label">${label}</span>
+      </div>`;
+    }
 
-  const defs = [
-    ['sessions','Sessões','volume GA4', false],
-    ['activeUsers','Usuários ativos','audiência GA4', false],
-    ['views','Visualizações','screen/page views', false],
-    ['clicks','Cliques orgânicos','Google Search Console', false],
-    ['impressions','Impressões orgânicas','Google Search Console', false],
-    ['ctr','CTR orgânico','Google Search Console', false],
-    ['position','Posição média','quanto menor, melhor', true],
-  ];
-  document.getElementById('kpis').innerHTML = defs.map(([key,label,desc,inverse], idx) => {
-    const cur = data.metrics.current[key];
-    const cmp = data.comparisons[key];
-    return `<div class="card">
-      <div class="small">${desc}</div>
-      <h3>${label}</h3>
-      <div class="value">${metricFormat(key, cur)}</div>
-      <div class="compare">${deltaHtml('vs mês passado', cmp.vsPreviousMonth, inverse)}${deltaHtml('vs ano passado', cmp.vsPreviousYear, inverse)}</div>
-    </div>`;
-  }).join('');
+    fetch('./data.json').then(r => r.json()).then(data => {
+      const p = data.periods.current;
+      document.getElementById('period-info').textContent = `Dados de ${p.startDate} até ${p.endDate} • Última sincronização: ${new Date(data.generatedAt).toLocaleTimeString('pt-BR')}`;
 
-  const labels = data.aligned.labels;
-  chartLine('sessionsChart', labels, [
-    { label:'Atual', data:data.aligned.sessions.current, color:colors.current },
-    { label:'Mês passado', data:data.aligned.sessions.previousMonth, color:colors.previousMonth },
-    { label:'Ano passado', data:data.aligned.sessions.previousYear, color:colors.previousYear },
-  ]);
-  chartLine('clicksChart', labels, [
-    { label:'Atual', data:data.aligned.clicks.current, color:colors.current },
-    { label:'Mês passado', data:data.aligned.clicks.previousMonth, color:colors.previousMonth },
-    { label:'Ano passado', data:data.aligned.clicks.previousYear, color:colors.previousYear },
-  ]);
-  chartLine('impressionsChart', labels, [
-    { label:'Atual', data:data.aligned.impressions.current, color:colors.accent },
-    { label:'Mês passado', data:data.aligned.impressions.previousMonth, color:colors.previousMonth },
-    { label:'Ano passado', data:data.aligned.impressions.previousYear, color:colors.previousYear },
-  ]);
+      // Alerta Crítico
+      if (data.comparisons.clicks.vsPreviousMonth < -20) {
+        document.getElementById('critical-alert').classList.add('active');
+      }
 
-  const topChannels = data.highlights.topChannelsCurrent;
-  chartBar('channelsChart', topChannels.map(x => x.name), topChannels.map(x => x.sessions), ['#60a5fa','#7dd3fc','#a78bfa','#f472b6','#2dd4bf','#fbbf24']);
+      // KPIs
+      const kpis = [
+        { label: 'Sessões Totais', key: 'sessions', icon: 'S' },
+        { label: 'Cliques Orgânicos', key: 'clicks', icon: 'C' },
+        { label: 'Usuários Ativos', key: 'activeUsers', icon: 'U' },
+        { label: 'Impressões GSC', key: 'impressions', icon: 'I' }
+      ];
 
-  new Chart(document.getElementById('radarChart'), {
-    type:'radar',
-    data:{
-      labels:['Sessões','Usuários','Views','Cliques','Impressões'],
-      datasets:[
-        { label:'Atual', data:[data.metrics.current.sessions, data.metrics.current.activeUsers, data.metrics.current.views, data.metrics.current.clicks, data.metrics.current.impressions], borderColor:colors.current, backgroundColor:colors.current+'22' },
-        { label:'Mês passado', data:[data.metrics.previousMonth.sessions, data.metrics.previousMonth.activeUsers, data.metrics.previousMonth.views, data.metrics.previousMonth.clicks, data.metrics.previousMonth.impressions], borderColor:colors.previousMonth, backgroundColor:colors.previousMonth+'20' },
-        { label:'Ano passado', data:[data.metrics.previousYear.sessions, data.metrics.previousYear.activeUsers, data.metrics.previousYear.views, data.metrics.previousYear.clicks, data.metrics.previousYear.impressions], borderColor:colors.previousYear, backgroundColor:colors.previousYear+'20' },
-      ]
-    },
-    options:{ responsive:true, maintainAspectRatio:false, plugins:{ legend:{ labels:{ color:'#e5eef9' } } }, scales:{ r:{ grid:{ color:'rgba(148,163,184,.18)' }, angleLines:{ color:'rgba(148,163,184,.14)' }, pointLabels:{ color:'#cbd5e1' }, ticks:{ display:false } } } }
-  });
+      document.getElementById('kpi-container').innerHTML = kpis.map(k => {
+        const val = data.metrics.current[k.key];
+        const cmpM = data.comparisons[k.key].vsPreviousMonth;
+        const cmpY = data.comparisons[k.key].vsPreviousYear;
+        return `
+          <div class="card kpi-card">
+            <div class="label">${k.label}</div>
+            <div class="value">${fmt.format(val)}</div>
+            ${trendHtml(cmpM, 'vs mês passado')}
+            ${trendHtml(cmpY, 'vs ano passado')}
+          </div>
+        `;
+      }).join('');
 
-  document.getElementById('gscPagesTable').innerHTML = makeTable([
-    { key:'page', label:'Página', className:'mono' },
-    { key:'clicks', label:'Cliques', render:v=>num(v) },
-    { key:'impressions', label:'Impr.', render:v=>num(v) },
-    { key:'position', label:'Posição', render:v=>position(v) },
-  ], data.highlights.topGscPagesCurrent);
+      // Main Chart
+      new Chart(document.getElementById('mainChart'), {
+        type: 'line',
+        data: {
+          labels: data.aligned.labels,
+          datasets: [
+            { label: 'Atual', data: data.aligned.sessions.current, borderColor: colors.blue, backgroundColor: colors.blue + '11', fill: true, tension: 0.4, borderWidth: 3, pointRadius: 4 },
+            { label: 'Mês Passado', data: data.aligned.sessions.previousMonth, borderColor: colors.purple, borderDash: [5, 5], tension: 0.4, borderWidth: 2, pointRadius: 0 }
+          ]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          plugins: { legend: { position: 'top', labels: { color: '#888', font: { weight: '600' } } } },
+          scales: {
+            x: { grid: { display: false }, ticks: { color: '#666' } },
+            y: { grid: { color: '#1a1a1a' }, ticks: { color: '#666' } }
+          }
+        }
+      });
 
-  document.getElementById('gscQueriesTable').innerHTML = makeTable([
-    { key:'query', label:'Query' },
-    { key:'clicks', label:'Cliques', render:v=>num(v) },
-    { key:'impressions', label:'Impr.', render:v=>num(v) },
-    { key:'position', label:'Posição', render:v=>position(v) },
-  ], data.highlights.topQueriesCurrent);
+      // Donut Chart
+      const topChannels = data.highlights.topChannelsCurrent;
+      new Chart(document.getElementById('donutChart'), {
+        type: 'doughnut',
+        data: {
+          labels: topChannels.map(c => c.name),
+          datasets: [{
+            data: topChannels.map(c => c.sessions),
+            backgroundColor: [colors.blue, colors.purple, colors.pink, colors.green, '#444', '#222'],
+            borderWidth: 0
+          }]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          plugins: { legend: { position: 'bottom', labels: { color: '#888', padding: 20 } } },
+          cutout: '70%'
+        }
+      });
 
-  document.getElementById('gaPagesTable').innerHTML = makeTable([
-    { key:'path', label:'Path', className:'mono' },
-    { key:'sessions', label:'Sessões', render:v=>num(v) },
-    { key:'views', label:'Views', render:v=>num(v) },
-  ], data.highlights.topGaPagesCurrent);
+      // Tables
+      const makeTable = (headers, rows, renderRow) => `
+        <table>
+          <thead><tr>${headers.map(h => `<th>${h}</th>`).join('')}</tr></thead>
+          <tbody>${rows.map(renderRow).join('')}</tbody>
+        </table>
+      `;
 
-  document.getElementById('summaryTable').innerHTML = makeTable([
-    { key:'period', label:'Período' },
-    { key:'sessions', label:'Sessões', render:v=>num(v) },
-    { key:'clicks', label:'Cliques', render:v=>num(v) },
-    { key:'ctr', label:'CTR', render:v=>pct(v) },
-    { key:'position', label:'Posição', render:v=>position(v) },
-  ], [
-    { period:'Atual', ...data.metrics.current },
-    { period:'Mês passado', ...data.metrics.previousMonth },
-    { period:'Ano passado', ...data.metrics.previousYear },
-  ]);
-});
-</script>
+      document.getElementById('gaPagesTable').innerHTML = makeTable(
+        ['Página', 'Sessões'],
+        data.highlights.topGaPagesCurrent.slice(0, 5),
+        r => `<tr><td class="mono">${r.path}</td><td>${fmt.format(r.sessions)}</td></tr>`
+      );
+
+      document.getElementById('gscQueriesTable').innerHTML = makeTable(
+        ['Termo', 'Cliques', 'Posição'],
+        data.highlights.topQueriesCurrent.slice(0, 5),
+        r => `<tr><td>${r.query}</td><td>${fmt.format(r.clicks)}</td><td>${r.position.toFixed(1)}</td></tr>`
+      );
+    });
+  </script>
 </body>
 </html>
