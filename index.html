@@ -126,6 +126,17 @@
       </div>
     </div>
 
+    <div class="chart-main">
+      <div class="card chart-card">
+        <h3>Tendência diária alinhada, Sessões GA4 por dia</h3>
+        <canvas id="dailySessionsChart"></canvas>
+      </div>
+      <div class="card chart-card">
+        <h3>Cliques orgânicos GSC por dia</h3>
+        <canvas id="dailyClicksChart"></canvas>
+      </div>
+    </div>
+
     <div class="table-section">
       <div class="card table-card">
         <h3>Top Landing Pages (GA4)</h3>
@@ -218,6 +229,47 @@
           responsive: true, maintainAspectRatio: false,
           plugins: { legend: { position: 'bottom', labels: { color: '#888', padding: 20 } } },
           cutout: '70%'
+        }
+      });
+
+      // Daily aligned charts
+      new Chart(document.getElementById('dailySessionsChart'), {
+        type: 'line',
+        data: {
+          labels: data.aligned.labels,
+          datasets: [
+            { label: 'Atual', data: data.aligned.sessions.current, borderColor: colors.blue, backgroundColor: colors.blue + '11', fill: false, tension: 0.35, borderWidth: 3, pointRadius: 3 },
+            { label: 'Mês passado', data: data.aligned.sessions.previousMonth, borderColor: colors.purple, fill: false, tension: 0.35, borderWidth: 2, pointRadius: 2 },
+            { label: 'Ano passado', data: data.aligned.sessions.previousYear, borderColor: colors.green, fill: false, tension: 0.35, borderWidth: 2, pointRadius: 2 }
+          ]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          plugins: { legend: { position: 'top', labels: { color: '#888' } } },
+          scales: {
+            x: { grid: { color: '#1a1a1a' }, ticks: { color: '#666' } },
+            y: { grid: { color: '#1a1a1a' }, ticks: { color: '#666' } }
+          }
+        }
+      });
+
+      new Chart(document.getElementById('dailyClicksChart'), {
+        type: 'line',
+        data: {
+          labels: data.aligned.labels,
+          datasets: [
+            { label: 'Atual', data: data.aligned.clicks.current, borderColor: colors.blue, backgroundColor: colors.blue + '11', fill: false, tension: 0.35, borderWidth: 3, pointRadius: 3 },
+            { label: 'Mês passado', data: data.aligned.clicks.previousMonth, borderColor: colors.purple, fill: false, tension: 0.35, borderWidth: 2, pointRadius: 2 },
+            { label: 'Ano passado', data: data.aligned.clicks.previousYear, borderColor: colors.green, fill: false, tension: 0.35, borderWidth: 2, pointRadius: 2 }
+          ]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          plugins: { legend: { position: 'top', labels: { color: '#888' } } },
+          scales: {
+            x: { grid: { color: '#1a1a1a' }, ticks: { color: '#666' } },
+            y: { grid: { color: '#1a1a1a' }, ticks: { color: '#666' } }
+          }
         }
       });
 
