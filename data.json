@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T13:54:04.995Z",
+  "generatedAt": "2026-05-04T14:17:04.474893Z",
   "propertyId": "376191126",
   "siteUrl": "sc-domain:espacovidapilates.com.br",
   "periods": {
@@ -26,8 +26,8 @@
   ],
   "metrics": {
     "current": {
-      "sessions": 4319,
-      "activeUsers": 3877,
+      "sessions": 4279,
+      "activeUsers": 3828,
       "views": 5295,
       "clicks": 43,
       "impressions": 2322,
@@ -35,8 +35,8 @@
       "position": 9.1343669250646
     },
     "previousMonth": {
-      "sessions": 7783,
-      "activeUsers": 7318,
+      "sessions": 7755,
+      "activeUsers": 7330,
       "views": 9247,
       "clicks": 47,
       "impressions": 4469,
@@ -44,8 +44,8 @@
       "position": 7.995972253300515
     },
     "previousYear": {
-      "sessions": 1430,
-      "activeUsers": 1158,
+      "sessions": 1427,
+      "activeUsers": 1133,
       "views": 1789,
       "clicks": 76,
       "impressions": 3189,
@@ -1153,12 +1153,12 @@
   },
   "comparisons": {
     "sessions": {
-      "vsPreviousMonth": -44.50725941153797,
-      "vsPreviousYear": 202.02797202797203
+      "vsPreviousMonth": -44.82269503546099,
+      "vsPreviousYear": 199.85984583041346
     },
     "activeUsers": {
-      "vsPreviousMonth": -47.021044001093195,
-      "vsPreviousYear": 234.80138169257341
+      "vsPreviousMonth": -47.7762619372442,
+      "vsPreviousYear": 237.86407766990288
     },
     "views": {
       "vsPreviousMonth": -42.738185357413215,
